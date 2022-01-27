@@ -1,6 +1,9 @@
 function GlobalStyle() {
     return (
         <style global jsx>{`
+        ::-webkit-scrollbar {
+          width: 0.5em;
+          }
         * {
           margin: 0;
           padding: 0;
@@ -28,7 +31,6 @@ function GlobalStyle() {
 }
 
 export default function MyApp({ Component, pageProps }) {
-    console.log('Roda em todas as páginas')
     return (
         <>
             <GlobalStyle />
